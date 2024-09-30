@@ -1,0 +1,147 @@
+body {
+    font-family: "Abel", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(176, 162, 255, 0.8), rgba(32, 15, 128, 0.6)), rgb(41, 41, 157);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Spicy Rice", serif;
+    color: white;
+    background: linear-gradient(to bottom, rgba(125, 123, 240, 0.8), rgba(32, 15, 128, 0.6)), rgb(41, 41, 157);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav.navigation {
+    background-color: rgb(32, 15, 128);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: "Abel", sans-serif;
+}
+
+nav a:hover {
+    color: rgb(162, 184, 255);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: rgb(162, 184, 255);
+}
+
+.card {
+    background: linear-gradient(to bottom, rgba(162, 184, 255, 0.8), rgba(220, 251, 255, 0.6)), rgb(25, 32, 238);
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    background-color: rgb(22, 4, 123);
+    padding: 2rem;
+}
+
+.about-content img {
+    border: 3px solid white;
+    border-radius: 8px;
+    width: 150px;
+    margin-left: 1rem;
+}
+
+.caracas-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 4, 123);
+    padding: 2rem;
+}
+
+.caracas-caption {
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.flag-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 4, 123);
+}
+
+.flag-content img {
+    border: 3px solid white;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.flag-caption {
+    font-style: italic;
+    text-align: center;
+    color: rgb(22, 4, 123);
+}
+
+.resources-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(22, 4, 123);
+    padding: 2rem;
+}
+
+#resources a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 0.5rem; 
+}
+
+#resources a:hover {
+    color: rgb(162, 184, 255);
+    text-decoration: underline;
+}
+
+#resources a:active {
+    color: rgb(162, 184, 255);
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+#lastModified {
+    color: rgb(162, 184, 255);
+    font-family: "Spicy Rice", serif;
+}
+
+/* Fonts */
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
