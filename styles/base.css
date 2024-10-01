@@ -127,12 +127,12 @@ nav a:hover {
 
 #resources {
     flex: 1;
-    text-align: auto;
+    text-align: left;
 }
 
 .resources-content {
     display: inline-block; 
-    text-align: auto;
+    text-align: left;
     margin-top: 12rem;
     font-size: 1.3rem;
     margin-right: auto;
