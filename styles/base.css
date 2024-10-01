@@ -1,32 +1,51 @@
-body {
-    font-family: "Abel", sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgba(176, 162, 255, 0.8), rgba(32, 15, 128, 0.6)), rgb(41, 41, 157);
-    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+    font-family: "Abel", sans-serif;
 }
 
 header {
     text-align: center;
-    padding: 2rem;
+    background-color: rgb(23, 78, 112);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(23, 78, 112);
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
 h1 {
-    font-family: "Spicy Rice", serif;
     color: white;
-    background: linear-gradient(to bottom, rgba(125, 123, 240, 0.8), rgba(32, 15, 128, 0.6)), rgb(41, 41, 157);
+    background: linear-gradient(to right, rgb(255, 255, 255) 60.8%, rgba(251, 250, 89) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 h2 {
     text-align: center;
+    color: white;
+    background-color: rgb(23, 78, 112);
+    padding: 1rem;
 }
 
+h3 {
+    text-align: center;
+    margin: 0;
+}
 
 nav.navigation {
-    background-color: rgb(32, 15, 128);
-    padding: 1rem;
+    background-color: rgb(51, 51, 51);
+    padding: 0.8rem;
     display: flex;
     justify-content: center;
 }
@@ -35,117 +54,214 @@ nav a {
     margin: 0 1rem;
     color: white;
     text-decoration: none;
-    font-family: "Abel", sans-serif;
 }
 
 nav a:hover {
-    color: rgb(162, 184, 255);
-    text-decoration: underline;
+    color: rgb(251, 250, 89);
+    text-decoration: overline;
 }
 
-nav a:active {
-    color: rgb(162, 184, 255);
-}
-
-.card {
-    background: linear-gradient(to bottom, rgba(162, 184, 255, 0.8), rgba(220, 251, 255, 0.6)), rgb(25, 32, 238);
+.container {
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    border-radius: 8px;
-    text-align: center;
+}
+
+.left-section {
+    flex: 3;
 }
 
 .about-content {
     display: flex;
     align-items: center;
-    background-color: rgb(22, 4, 123);
-    padding: 2rem;
+    margin: 0;
+    color: rgb(0, 0, 0)
 }
 
 .about-content img {
-    border: 3px solid white;
-    border-radius: 8px;
+    border: 1px solid rgb(221, 221, 221); 
     width: 150px;
     margin-left: 1rem;
+    margin-top: 1rem; 
 }
 
-.caracas-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(22, 4, 123);
-    padding: 2rem;
-}
-
-.caracas-caption {
-    font-style: italic;
-    text-align: center;
-    color: white;
+.card {
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0;
+    background: #f9f9f9;
 }
 
 .flag-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(22, 4, 123);
+    margin-top: 2rem; 
 }
 
-.flag-content img {
-    border: 3px solid white;
-    border-radius: 8px;
+.flag-image {
+    border: none;
     width: 150px;
+    margin-top: 0px;
+    border: 1px solid rgb(221, 221, 221); 
+}
+
+.flag-text {
+    text-align: center; 
+    margin-top: 2rem;
+    color: rgb(0, 0, 0)
 }
 
 .flag-caption {
     font-style: italic;
+    color: rgb(51, 51, 51);
+    margin-top: 5px; 
+    text-align: center; 
+}
+
+#resources {
+    flex: 1;
     text-align: center;
-    color: rgb(22, 4, 123);
 }
 
 .resources-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: rgb(22, 4, 123);
-    padding: 2rem;
+    display: inline-block; 
+    text-align: left;
+    margin-top: 12rem;
+    font-size: 1.3rem;
 }
 
 #resources a {
-    color: rgb(255, 255, 255);
+    color: rgb(19, 45, 231);
     text-decoration: none;
-    margin-bottom: 0.5rem; 
+    font-weight: bold;
+    margin: 0.5rem 0; 
 }
 
 #resources a:hover {
-    color: rgb(162, 184, 255);
+    color: rgb(86, 28, 135);
     text-decoration: underline;
 }
 
-#resources a:active {
-    color: rgb(162, 184, 255);
-    
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    color: white;
-}
-
 #lastModified {
-    color: rgb(162, 184, 255);
-    font-family: "Spicy Rice", serif;
+    color: rgb(251, 250, 89);
 }
 
-.spicy-rice-regular {
-    font-family: "Spicy Rice", serif;
-    font-weight: 400;
-    font-style: normal;
+.bold {
+    font-weight: bold;
 }
 
 .abel-regular {
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.montserrat-alternates-thin {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat-alternates-extralight {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.montserrat-alternates-light {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-alternates-regular {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-alternates-medium {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-alternates-bold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.montserrat-alternates-black {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.montserrat-alternates-thin-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.montserrat-alternates-extralight-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.montserrat-alternates-light-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.montserrat-alternates-regular-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.montserrat-alternates-medium-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.montserrat-alternates-semibold-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.montserrat-alternates-bold-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.montserrat-alternates-extrabold-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.montserrat-alternates-black-italic {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
