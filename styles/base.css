@@ -15,6 +15,14 @@ body {
     font-family: "Abel", sans-serif;
 }
 
+.text-white {
+    color: white;
+}
+
+.text-yellow {
+    color: rgba(251, 250, 89);
+}
+
 header {
     text-align: center;
     background-color: rgb(23, 78, 112);
