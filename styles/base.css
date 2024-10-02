@@ -26,13 +26,11 @@ footer {
     padding: 1rem;
     background-color: rgb(23, 78, 112);
     font-family: "Montserrat Alternates", sans-serif;
+    color: white; 
 }
 
 h1 {
-    color: white;
-    background: linear-gradient(to right, rgb(255, 255, 255) 60.8%, rgba(251, 250, 89) 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding: 1rem; 
 }
 
 h2 {
@@ -80,7 +78,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin: 0;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
 }
 
 .about-content img {
@@ -115,7 +113,7 @@ nav a:hover {
 .flag-text {
     text-align: center; 
     margin-top: 2rem;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
 }
 
 .flag-caption {
@@ -179,8 +177,8 @@ nav a:hover {
 .abel-regular {
     font-family: "Abel", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
+
 
 .montserrat-alternates-thin {
     font-family: "Montserrat Alternates", sans-serif;
@@ -289,3 +287,4 @@ nav a:hover {
     font-weight: 900;
     font-style: italic;
 }
+
