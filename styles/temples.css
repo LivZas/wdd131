@@ -104,7 +104,6 @@ nav a:hover {
 
 .temple-gallery figure {
     text-align: center;
-    margin: 0;
     margin: 0 1rem;
 }
 
@@ -157,6 +156,7 @@ nav a:hover {
         font-weight: 400;
     }
 }
+
 
 
 .abel-regular {
