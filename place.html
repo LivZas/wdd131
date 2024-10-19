@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lievelyn Zapata">
+    <meta name="description" content="The country that I want to visit in the future.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="styles/place.css" rel="stylesheet" media="screen and (max-width: 750px)">
+    <link href="styles/place-large.css" rel="stylesheet" media="screen and (min-width: 751px)">
+    <title>W03 Assignment - Place that I wish to visit</title>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>France</h1>
+    </header>
+
+    <div class="divider-1"></div></div>
+
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 750px)" srcset="images/hero-small.webp">
+            <img src="images/hero-large.webp" alt="France" class="hero-image">
+        </picture>
+    </div>
+
+    <div class="divider-2"></div>
+
+    <main>
+        <section class="data-section">
+            <div class="data-section-header">
+                <h2>Data</h2>
+            </div>
+            <div class="data-info">
+                <strong>Area: </strong> <span>248,573 sq mi</span> <br>
+                <strong>Population: </strong> <span>68,373,433</span> <br>
+                <strong>Capital: </strong> <span>Paris</span> <br>
+                <strong>Languages: </strong> <span>French</span> <br>
+                <strong>Currency: </strong> <span>Euro</span> <br>
+                <strong>Time Zone: </strong> <span>UTC+1</span> <br>
+                <strong>Calling Code: </strong> <span>+33</span> <br>
+                <strong>Internet TLD: </strong> <span>.fr</span> <br>
+            </div>
+        </section>
+
+
+        <section class="weather-section">
+            <div class="weather-section-header">
+                <h2>Weather</h2>
+            </div>
+            <img src="images/cloudy.svg" alt="Weather Icon" class="weather-icon">
+            <div class="weather-info">
+                <strong>Temperature: </strong> <span id="temperature">14°C</span> <br>
+                <strong>Conditions: </strong> <span>Mostly Cloudy</span> <br>
+                <strong>Wind: </strong> <span id="wind-speed">8 km/h</span> <br>
+                <strong>Wind Chill: </strong> <span id="wind-chill">14°C</span> <br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 🔰 Lievelyn Zapata 🔰 Caracas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
