@@ -113,31 +113,34 @@ hr {
     display: none;
 }
 
-.weather-section h2 {
-    position: relative;
-    text-align: center;
+.weather-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002395;
+    margin: 10px;
 }
 
-.weather-section h2::after {
-    content: url('../images/cloudy.svg');
-    position: absolute;
-    top: 50%;
-    left: 130%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    display: inline-block;
+.weather-section-header h2 {
+    position: relative;
+    margin: 0;
+    color: white;
+    margin-bottom: -45px;
+}
+
+.weather-section-header h2::after {
+    content: "⛅";
+    font-size: 1.5em;
+    margin-left: 120px;
+    position: relative;
+    top: -40px;
 }
 
 .weather-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.weather-icon {
-    width: 100px;
-    height: 100px;
+    padding: 10px;
 }
 
 .data-section-header {
@@ -157,7 +160,7 @@ hr {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
-    padding-right: 60%;
+    padding-right: 44%;
 }
 
 footer {
