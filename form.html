@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lievelyn Zapata">
+    <meta name="description" content="Form for submitting a product review.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/form-large.css" rel="stylesheet">
+    <title>Product Review Form</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+<header> 
+    <h1>Product Review</h1>
+</header>
+    
+<main>
+<section class="review-container">
+    <form action="review.html" method="get">
+        <label for="product"><strong>Product Name:</strong></label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+        </select><br><br>
+
+        <label><strong>Overall Rating:</strong></label><br>
+        <div class="rating-container">
+            <input type="range" id="rating" name="rating" min="1" max="5" value="1" step="1" style="width: 100%;">
+            <div class="rating-labels">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <br>
+
+        <label for="installation-date"><strong>Date of Installation:</strong></label>
+        <input type="date" id="installation-date" name="installation-date" required><br><br>
+
+        <label><strong>Which features did you find useful in the product?</label>
+        <em>(Check all that apply)</strong></em>
+        <br>
+        <div class="features-container">
+            <div class="feature-item">
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability"><strong>Durability</strong></label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                <label for="ease-of-use"><strong>Ease of Use</strong></label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance"><strong>Performance</strong></label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design"><strong>Design</strong></label>
+            </div>
+        </div>
+
+        <label for="message"><strong>Written Review <span style="color: #00087c;">(Optional)</span>:</strong></label>
+        <textarea id="message" name="message" rows="4" cols="50" style="margin-bottom: 20px;"></textarea>
+
+        <label for="name"><strong>Your Name <span style="color: #00087c;">(Optional)</span>:</strong></label>
+        <input type="text" id="name" name="name" style="width: calc(100% - 52px);"><br><br>
+
+        <input type="submit" value="Post Review" class="submit-button">
+    </form>
+</section>
+</main>
+<footer>
+    <p>© <span id="currentyear"></span> 🔰 Lievelyn Zapata 🔰 Caracas</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
