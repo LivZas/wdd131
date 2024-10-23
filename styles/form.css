@@ -24,8 +24,7 @@ header {
 }
 
 #name {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     padding: 5px;
     box-sizing: border-box;
 }
