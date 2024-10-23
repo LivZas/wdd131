@@ -25,6 +25,7 @@ header {
 
 #name {
     width: 100%;
+    max-width: 400px;
     padding: 5px;
     box-sizing: border-box;
 }
@@ -83,4 +84,10 @@ textarea {
 
 .optional-text {
     color: #00087c;
+}
+
+@media (max-width: 720px) {
+    #name {
+        max-width: 100%;
+    }
 }
