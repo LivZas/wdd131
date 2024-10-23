@@ -22,11 +22,13 @@ header {
 
 .review-container label {
     display: block;
-    margin: 0px 0;
+    margin: 10px 0 5px;
 }
 
-.review-container strong {
-    font-weight: bold;
+#name {
+    width: 400px;
+    padding: 5px;
+    box-sizing: border-box;/
 }
 
 .features-container {
@@ -41,40 +43,36 @@ header {
 }
 
 .rating-container {
-    position: relative;
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: #2d032a;
-    outline: none;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: gold;
-    cursor: pointer;
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: gold;
-    cursor: pointer;
-}
-
-.rating-labels {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+    flex-direction: column;
+    margin: 0;
+}
+
+.rating-container div {
+    display: flex;
+    align-items: center;
+}
+
+.rating-container input[type="radio"] {
+    margin-right: 10px;
+    margin-left: -5px;
+}
+
+.rating-container label {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#installation-date {
+    margin-top: -15px;
+}
+
+label[for="installation-date"] {
+    margin-top: 30px;
+}
+
+label[for="overall-rating"] {
+    margin-top: -10px;
 }
 
 footer {
@@ -97,9 +95,14 @@ footer {
 
 textarea {
     margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-
+.optional-text {
+    color: #00087c;
+}
 
 .abel-regular {
     font-family: "Abel", sans-serif;

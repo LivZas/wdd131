@@ -20,6 +20,7 @@
     
 <main>
 <section class="review-container">
+    <h2>Submit Your Review</h2>
     <form action="review.html" method="get">
         <label for="product"><strong>Product Name:</strong></label>
         <select id="product" name="product" required>
@@ -28,24 +29,32 @@
 
         <label><strong>Overall Rating:</strong></label><br>
         <div class="rating-container">
-            <input type="range" id="rating" name="rating" min="1" max="5" value="1" step="1" style="width: 100%;">
-            <div class="rating-labels">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
+            <div>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">⭐</label>
+            </div>
+            <div>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">⭐⭐</label>
+            </div>
+            <div>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">⭐⭐⭐</label>
+            </div>
+            <div>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">⭐⭐⭐⭐</label>
+            </div>
+            <div>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">⭐⭐⭐⭐⭐</label>
             </div>
         </div>
-
-        <br>
 
         <label for="installation-date"><strong>Date of Installation:</strong></label>
         <input type="date" id="installation-date" name="installation-date" required><br><br>
 
-        <label><strong>Which features did you find useful in the product?</label>
-        <em>(Check all that apply)</strong></em>
-        <br>
+        <label><strong>Which features did you find useful in the product?</strong> <em>(Check all that apply)</em></label>
         <div class="features-container">
             <div class="feature-item">
                 <input type="checkbox" id="durability" name="features" value="Durability">
@@ -65,11 +74,11 @@
             </div>
         </div>
 
-        <label for="message"><strong>Written Review <span style="color: #00087c;">(Optional)</span>:</strong></label>
-        <textarea id="message" name="message" rows="4" cols="50" style="margin-bottom: 20px;"></textarea>
+        <label for="message"><strong>Written Review <span class="optional-text">(Optional)</span>:</strong></label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
 
-        <label for="name"><strong>Your Name <span style="color: #00087c;">(Optional)</span>:</strong></label>
-        <input type="text" id="name" name="name" style="width: calc(100% - 52px);"><br><br>
+        <label for="name"><strong>Your Name <span class="optional-text">(Optional)</span>:</strong></label>
+        <input type="text" id="name" name="name"><br><br>
 
         <input type="submit" value="Post Review" class="submit-button">
     </form>
@@ -81,3 +90,4 @@
 </footer>
 </body>
 </html>
+

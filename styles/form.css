@@ -8,13 +8,11 @@ header {
     color: white;
     text-align: center;
     padding: 3px 0;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .review-container {
     background-color: #d5cdd5;
-    padding: 20px;
+    padding: 15px;
     margin: 15px auto;
     max-width: 90%;
     border-radius: 10px;
@@ -22,60 +20,42 @@ header {
 
 .review-container label {
     display: block;
-    margin: 0px 0;
+    margin: 10px 0 5px;
 }
 
-.review-container strong {
-    font-weight: bold;
+#name {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .features-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .feature-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .rating-container {
-    position: relative;
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: #2d032a;
-    outline: none;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: gold;
-    cursor: pointer;
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: gold;
-    cursor: pointer;
-}
-
-.rating-labels {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+    flex-direction: column;
+}
+
+.rating-container div {
+    display: flex;
+    align-items: center;
+}
+
+.rating-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.rating-container label {
+    font-size: 15px;
+    cursor: pointer;
 }
 
 footer {
@@ -83,40 +63,24 @@ footer {
     padding: 3px 0;
     background-color: rgb(45, 3, 42);
     color: white;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .submit-button {
     display: block;
     width: calc(100% - 30px);
-    margin: 20px auto;
+    margin: 30px auto 10px;
     padding: 15px;
     font-weight: bold;
     font-size: 16px;
 }
 
 textarea {
-    width: calc(100% - 30px);
     margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-    .review-container {
-        padding: 15px;
-    }
-
-    .submit-button {
-        margin: 15px auto;
-    }
-
-    header, footer {
-        padding: 10px 0;
-    }
-
-    .feature-item {
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 0;
-    }
+.optional-text {
+    color: #00087c;
 }
