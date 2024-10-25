@@ -13,19 +13,19 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Distribuir espacio entre elementos */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #4E3B31;
     color: #FFF5E1; 
     font-family: "Calistoga", serif;
-    max-width: 100%; /* Asegura que ocupe todo el ancho */
+    max-width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: flex-end; 
-    width: auto; /* Ajustar el ancho automáticamente */
+    width: auto;
 }
 
 nav ul {
