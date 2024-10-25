@@ -71,6 +71,13 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: "Sansita", sans-serif;
+    color:  #597f59;
+    font-size: 3rem;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -167,4 +174,11 @@ footer {
     height: auto;
     display: block;
     margin: 10px auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.left-section img.fade.loaded {
+    opacity: 1;
 }

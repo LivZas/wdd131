@@ -11,3 +11,9 @@ menuToggle.addEventListener('click', () => {
     navigation.classList.toggle('active');
     menuToggle.textContent = navigation.classList.contains('active') ? '✖' : '☰';
 });
+
+document.querySelectorAll('img.fade').forEach(img => {
+    img.onload = () => {
+        img.classList.add('loaded');
+    };
+});
