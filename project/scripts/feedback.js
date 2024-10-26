@@ -21,10 +21,10 @@ const loadFeedbackOptions = () => {
         { id: "positive", name: "Yes" },
         { id: "negative", name: "No" },
         { id: "indecisive", name: "It could get better" },
-        { id: "opinion", name: "Other (write your opinion)" }
+        { id: "opinion", name: "Other (write your review)" }
     ];
 
-    const selectElement = document.getElementById('product');
+    const selectElement = document.getElementById('your-opinion');
     feedbackOptions.forEach(option => {
         const optionElement = document.createElement('option');
         optionElement.value = option.id;
@@ -39,7 +39,7 @@ const handleFormSubmit = () => {
         event.preventDefault();
 
         const feedbackData = {
-            product: form.product.value,
+            yourOpinion: form['your-opinion'].value,
             rating: form.rating.value,
             date: form['feedback-date'].value,
             features: Array.from(form.features).filter(feature => feature.checked).map(feature => feature.value),
