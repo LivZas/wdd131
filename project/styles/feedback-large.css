@@ -129,10 +129,6 @@ footer {
     font-family: "Calistoga", serif;
 }
 
-.optional-text {
-    color: #597f59;
-}
-
 .features-container {
     display: flex;
     flex-wrap: wrap;
