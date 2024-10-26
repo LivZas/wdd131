@@ -45,8 +45,6 @@ main {
     margin-top: 20px;
 }
 
-
-
 .submit-button:hover {
     background-color: #6F5E5E;
 }
@@ -58,3 +56,8 @@ footer {
     color: #FFF5E1; 
     font-family: "Calistoga", serif;
 }
+
+#review-count {
+    color: red;
+}
+
